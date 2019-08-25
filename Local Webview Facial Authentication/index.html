@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Banco Azteca - Reconocimiento Facial</title>
+	<meta charset="UTF-8">
+	<meta name="viewport">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<script src="js/p5.min.js"></script>
+	<script src="js/p5.dom.min.js"></script>
+	<script src="js/ml5.min.js"></script>
+</head>
+<body>
+	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+		<a class="navbar-brand" href="#"><img src="images/banco-azteca-logo.png" alt=""></a>
+	</nav>
+	<form method="post">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm">
+					<div class="card">
+						<div class="card-body">
+							<div id="sketch-holder"></div>
+						</div>
+					</div>
+				</div>
+				<div>
+					<select name="listaDeDispositivos" id="listaDeDispositivos"></select>
+				</div>
+				<div class="col-sm">
+					<div id="msg"><b>CARGANDO</div>
+					<span id="buttons">
+					<div class="form-group" id="nameSection">
+					<input type="text" class="form-control" placeholder="ID o Nombre" id="personName" name="personName"  required="required">
+					</div>
+					<div class="btn-group" role="group" aria-label="Basic example">
+  						<button type="button" class="btn btn-secondary btn-lg" id="addAnImage">Tomar Foto</button>
+  						<button type="button" class="btn btn-success btn-lg" id="register">Registrar Rostro</button>
+  						<button type="button" class="btn btn-dark btn-lg" id="save">Guardar Modelo</button>
+					</div>
+					<!-- <div id="formFooter">
+							<a class="underlineHover" href="javascript:login()">Login</a>
+					</div> -->
+					</span>	
+				</div>
+			</div>
+		</div>
+	</form>
+	<div id="dropDownSelect1"></div>
+	<script src="js/main.js"></script>
+</body>
+</html>
